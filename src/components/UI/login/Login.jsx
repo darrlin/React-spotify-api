@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 
 const Login = (props) => {
     const CLIENT_ID = '88255752acaa4544a7f67320e6d057e3';
-    const REDIRECT_URI = 'http://localhost:3000';
+    const REDIRECT_URI = window.location.origin + '/'; 
     const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
     const RESPONSE_TYPE = 'token';
 
